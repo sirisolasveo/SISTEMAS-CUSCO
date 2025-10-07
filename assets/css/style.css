@@ -10,11 +10,29 @@
     --color-hover: #164A16;
 }
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos base */
 body {
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding-bottom: 70px; /* Solo espacio para la barra de navegación inferior */
+    padding-bottom: 70px; /* Espacio para la barra de navegación */
+    position: relative;
+    overflow-x: hidden; /* Prevenir scroll horizontal */
+}
+
+/* Contenedor principal consistente */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 /* Estilos para la navegación fija */
